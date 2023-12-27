@@ -1,0 +1,13 @@
+.rostro{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    margin-right: 990px;
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ffffff; 
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); 
+    z-index: 1
+}
