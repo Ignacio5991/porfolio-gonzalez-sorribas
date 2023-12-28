@@ -7,16 +7,19 @@ import "../../styles/NavBarStyles.css";
 function Navbars() {
   return (
     <>
+
       <Navbar className="navbarestilos">
-        <Container>
-          <Nav.Link as={Link} to="/">Inicio</Nav.Link>
+      
+        <Container className="linkestilos">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/tecnologias">Tecnologias que uso</Nav.Link>
+          <Nav.Link as={Link} to="/">Inicio</Nav.Link>
+            <Nav.Link as={Link} to="/tecnologias">Tecnologias</Nav.Link>
             <Nav.Link as={Link} to="/certificados">Certificados</Nav.Link>
             <Nav.Link as={Link} to="/proyectos">Proyectos</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
+
     </>
   );
 }

@@ -1,6 +1,7 @@
 .navbarestilos {
   position: fixed;
   width: 100%;
+  margin-bottom: 100px; 
   list-style-type: none;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 0, 0);
@@ -9,8 +10,15 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
-  z-index: 2
+  z-index: 2;
+  top: 0; 
+  left: 0; 
 }
 .navbarestilos a {
   color: rgb(0, 0, 0);
+  transition:  0.5s;
 }
+.navbarestilos a:hover {
+  color: rgb(14, 107, 194);
+}
+
