@@ -1,11 +1,19 @@
 .estiloFooter {
+  height: 45px; /* Ajusta la altura según tus necesidades */
   width: 100%;
   max-width: 100%;
   margin-top: auto; 
   background-color: rgb(247, 247, 247);
   position: fixed; 
   bottom: 0; 
-  left: 0; 
+  left: 0;
+  display: flex; /* Para alinear contenido verticalmente */
+  justify-content: center; /* Para centrar contenido horizontalmente */
+  align-items: center; /* Para centrar contenido verticalmente */
+  padding: 10px; /* Añade relleno alrededor del contenido */
+}
+.btn-contacto{
+  align-items: center;
 }
 .textoFooter {
   text-align: center;

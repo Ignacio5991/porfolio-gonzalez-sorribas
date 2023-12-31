@@ -3,14 +3,14 @@
 }
 
 .carousel-item img {
-  width: 100%; 
+  width: 50%; 
   height: auto; 
   object-fit: cover; 
 }
 
 .carousel-section {
   background-color: black; /* Fondo negro para la sección del carrusel */
-  padding: 40px; /* Espaciado alrededor del carrusel */
+  margin-bottom: 120px; /* Espaciado alrededor del carrusel */
   border-radius: 10px; /* Bordes redondeados si lo deseas */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
 }
