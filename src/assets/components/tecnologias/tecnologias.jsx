@@ -1,17 +1,38 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
+import Carousel from "react-bootstrap/Carousel"
+import "../../styles/TecnologiasStyles.css";
 
-export default function Tecnologias() {
-    return (
-      <div>
-        <h1 className="estiloTitulo">Somos Cybertron</h1>
-        <p className="textoPresentacion">
-          Somos un grupo de amigos que tiene pasion por la computacion y el gaming es por eso que en el año 2021 nos propusimos crear nuestro porpio negocio para compartir nuestra pasion con los demas.
-        </p>
-        <p className="textoPresentacion">
-          Estamos en la ciudad de Rosario pero hacemos envios a todo el pais ya que queremos extender nuestra experiencia y conocimiento a todas aquellas personas apasionas por el gaming y la
-          tecnologia.
-        </p>
+
+
+const TechnologiesSection = () => {
+  return (
+    <div className="carousel-section">
+      <div className="carousel-container">
+        <Carousel className="carousel-shadow">
+          {[
+            "image/html",
+            "image/css3logo",
+            "image/javascript",
+            "image/node",
+            "image/git-logo",
+            "image/github",
+            "image/firebase",
+            "image/mongo",
+            "image/reactjs",
+            "image/next",
+            "image/boostrap",
+            "image/reactboostrap",
+            "image/materialui",
+          ].map((image, index) => (
+            <Carousel.Item key={index} className="carousel-item">
+              <img src={`/${image}.jpg`} alt={`Certificación ${index}`} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
-    );
-  }
+    </div>
+  );
+}
+
+export default TechnologiesSection;
